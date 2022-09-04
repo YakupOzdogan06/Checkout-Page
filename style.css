@@ -1,0 +1,333 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  overflow: auto;
+}
+
+#checkout1 {
+  font-size: 32px;
+  font-weight: 700px;
+  padding-right: 200px;
+
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+
+  gap: 2rem;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 3rem;
+  position: relative;
+  position: absolute;
+  left: 150px;
+}
+
+.contactinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.contactiçkısım1 {
+  position: relative;
+}
+
+.fa-envelope {
+  position: absolute;
+  padding-left: 5px;
+  display: block;
+  padding-top: 8px;
+}
+.email1 {
+  padding: 8px 5px 8px 25px;
+  height: 33px;
+  width: 372px;
+  border-radius: 5px;
+  border: 1px solid #828282;
+  display: inline-block;
+}
+
+.contactiçkısım2 {
+  position: relative;
+}
+.fa-phone {
+  position: absolute;
+  display: block;
+  padding-top: 7px;
+  padding-left: 8px;
+}
+
+.phone1 {
+  padding: 8px 5px 8px 27px;
+  display: inline-block;
+  height: 33px;
+  width: 372px;
+  border-radius: 5px;
+  border: 1px solid #828282;
+}
+
+.shippingkısım {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.shippingName {
+  position: relative;
+}
+
+.fa-user {
+  position: absolute;
+  top: 25px;
+  left: 5px;
+}
+.shippingad {
+  display: inline-block;
+  width: 372px;
+  height: 33px;
+  padding: 8px 5px 8px 25px;
+  border-radius: 5px;
+  border: 1px solid #828282;
+}
+
+.shippingAdres {
+  position: relative;
+}
+
+.fa-house-chimney {
+  position: absolute;
+  top: 25px;
+  left: 2px;
+}
+
+.shippingev {
+  width: 372px;
+  height: 33px;
+  padding: 8px 5px 8px 25px;
+  border-radius: 5px;
+  border: 1px solid #828282;
+}
+
+.shippingCity {
+  position: relative;
+}
+
+.fa-city {
+  position: absolute;
+  top: 25px;
+  left: 5px;
+}
+
+.shippingcity1 {
+  width: 372px;
+  height: 33px;
+  padding: 8px 5px 8px 30px;
+  border-radius: 5px;
+  border: 1px solid #828282;
+}
+
+.shippingCountry {
+  position: relative;
+}
+
+.fa-earth-europe {
+  position: absolute;
+  top: 27px;
+  left: 5px;
+}
+
+.country-select {
+  height: 35px;
+  width: 120px;
+  padding: 8px 5px 8px 35px;
+  border-radius: 5px;
+  border: 1px solid #828282;
+}
+
+.shippingPost {
+  position: relative;
+  position: absolute;
+  bottom: 53px;
+  left: 130px;
+}
+.fa-envelopes-bulk {
+  position: absolute;
+  top: 27px;
+  left: 5px;
+}
+
+.post1 {
+  height: 34px;
+  width: 210px;
+  padding: 8px 5px 8px 35px;
+  border-radius: 5px;
+  border: 1px solid #828282;
+}
+
+.box {
+  position: absolute;
+  left: 600px;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.baş {
+  display: flex;
+  gap: 1rem;
+  height: 110px;
+  width: 320px;
+}
+
+.yan {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.üst h2 {
+  margin: 3px 0;
+}
+
+img {
+  border-radius: 10px;
+  height: 110px;
+  width: 95px;
+}
+
+.üst p {
+  color: #f2994a;
+}
+
+.üst p span {
+  text-decoration: line-through;
+  color: #4e5150;
+  font-size: 12px;
+}
+
+.alt {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  border: 1px solid #888888;
+  width: 102px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.alt button {
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  position: relative;
+  height: 25px;
+  width: 20px;
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+.fa-minus {
+  position: absolute;
+  left: 2px;
+  top: 4px;
+}
+.fa-plus {
+  position: absolute;
+  bottom: 5px;
+  right: 2px;
+}
+
+.alt p {
+  padding: 8px;
+}
+
+.son {
+  display: flex;
+  gap: 1rem;
+}
+
+.fiyat {
+  display: flex;
+  gap: 3rem 12rem;
+  border-top: 1px solid #828282;
+  height: 19px;
+  width: 280px;
+}
+
+.ürün {
+  margin-bottom: -28px;
+}
+#bttn {
+  position: absolute;
+  left: 550px;
+  top: 700px;
+  width: 75px;
+  height: 45px;
+  background-color: #f2994a;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: #e0e0e0;
+}
+
+#bttn:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: 0.7s;
+  box-shadow: 10px 10px 10px 5px red;
+}
+
+@media (max-width: 900px) {
+  body {
+    position: relative;
+  }
+
+  main {
+    position: relative;
+  }
+
+  .box {
+    position: absolute;
+    left: 30px;
+    top: 5px;
+  }
+
+  form {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+
+  #bttn {
+    position: absolute;
+    left: 200px;
+    top: 1000px;
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <h1 id="checkout1">Checkout</h1>
+    <main class="maingenel">
+      
+
+      <form class="formgenel" action="result.html" method="get">
+        <div class="contactinfo">
+          <h1 class="secondh1">Contact information</h1>
+          <div class="contactiçkısım1">
+            <label for="email" class="label1">Email </label>
+            <br />
+            <i class="fa-solid fa-envelope"></i>
+
+            <input
+              type="email"
+              id="email"
+              name="Email"
+              class="email1"
+              placeholder="Enter your mail..."
+              required
+            />
+          </div>
+
+          <div class="contactiçkısım2">
+            <label for="phone" class="label2">Phone</label>
+            <br />
+            <i class="fa-solid fa-phone"></i>
+
+            <input
+              type="tel"
+              id="phone"
+              class="phone1"
+              name="phone"
+              placeholder="Enter your phone..."
+              required
+            />
+          </div>
+        </div>
+        <div class="shippingkısım">
+          <h1>Shipping address</h1>
+          <div class="shippingName">
+            <label for="fullname" class>Full name</label><br />
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              id="fullname"
+              class="shippingad"
+              name="full_name"
+              placeholder="Enter your Full name..."
+              required/>
+
+          </div>
+          <div class="shippingAdres">
+            <label for="address">Address</label>
+                <br />
+                <i class="fa-solid fa-house-chimney"></i>
+                <input
+                  type="text"
+                  name="address"
+                  class="shippingev"
+                  id="address"
+                  placeholder="Enter your address" required
+                />
+          </div>
+          <div class="shippingCity">
+            <label for="city">City</label>
+            <br />
+            <i class="fa-solid fa-city"></i>
+            <input
+              type="text"
+              name="city"
+              class="shippingcity1"
+              id="city"
+              placeholder="Enter your city..."
+              required
+            />
+          </div>
+          <div class="shippingCountry">
+            <label for="country">Country</label>
+            <br>
+           
+            <i class="fa-solid fa-earth-europe"></i>
+            <select name="country" id="country" class="country-select">
+              <option value="Turkey">Turkey</option>
+              <option value="Germany">Germany</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+            </select required>
+          </div>
+          <div class="shippingPost">
+            <label for="postcode">Post Code</label>
+            <br />
+            <i class="fa-solid fa-envelopes-bulk"></i>
+            <input
+              type="text"
+              class="post1"
+              name="postcode"
+              id="postcode"
+              placeholder="Enter your postal code..." required/>
+          </div>
+          <br>
+          <div class="lastcheckbox">
+            <input type="checkbox" id="check" name="checkbox" />
+              
+
+            <label for="check">See this information next time</label>
+          </div>
+              
+
+        </div>
+          
+
+          
+
+    
+       
+      </form>
+
+      <!-- SAĞ KISIMM BAŞ -->
+      <div class="box">
+        <!-- ilk foto -->
+        <div class="resim baş">
+          <img src="/images/photo3.png" width="125px" alt="" />
+          <div class="yan">
+            <div class="üst">
+              <h2>Vintage Backbag</h2>
+              <p><strong>$54.99</strong> <span>$94.99</span></p>
+            </div>
+            <div class="alt">
+              <button onclick="e()">
+                <i
+                  class="fa-solid fa-minus"
+                  style="background-color: rgb(230, 219, 219)"
+                ></i>
+              </button>
+              <p>1</p>
+              <button onclick="er()">
+                <i
+                  class="fa-solid fa-plus"
+                  style="background-color: rgb(230, 219, 219)"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--ilk foto son -->
+
+        <!-- ikinci foto -->
+        <div class="resim son">
+          <img src="/images/photo2.png" width="125px" alt="" />
+          <div class="yan">
+            <div class="üst">
+              <h2>Levi Shoes</h2>
+              <p><strong>$74.99</strong> <span>$124.99</span></p>
+            </div>
+            <div class="alt">
+              <button >
+                <i
+                  class="fa-solid fa-minus"
+                  style="background-color: rgb(230, 219, 219)"
+                ></i>
+              </button>
+              <p>1</p>
+              <button >
+                <i
+                  class="fa-solid fa-plus"
+                  style="background-color: rgb(230, 219, 219)"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- ikinci foto son  -->
+
+        <!-- SAĞ KISIM ALT TARAF BAŞ -->
+        <div class="fiyat ürün">
+          <p>Shipping</p>
+          <p>$19</p>
+        </div>
+        <div class="fiyat total">
+          <p>Total</p>
+          <p>$148.98</p>
+        </div>
+        <!-- SAĞ KISIM ALT TARAF SON -->
+      </div>
+    </main>
+   
+      
+    
+    <button id="bttn" type="submit">Continue</button>
+  </body>
+</html>
